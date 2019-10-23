@@ -1,0 +1,21 @@
+{
+  "name": "deskgatsby",
+  "version": "1.0.0",
+  "main": "electron.js",
+  "license": "MIT",
+  "dependencies": {
+    "electron-is-dev": "^1.1.0",
+    "gatsby": "^2.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0",
+    "wait-on": "^3.3.0"
+  },
+  "scripts": {
+    "electron-dev": "concurrently \"gatsby develop\" \"wait-on http://localhost:8000 && electron .\""
+  }
+}
